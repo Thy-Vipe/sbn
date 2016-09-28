@@ -1,0 +1,24 @@
+
+
+You can hit:
+
+	CTRL+P to open up the presets editor.
+	ALT+C To open up the constraint editor.
+
+	CTRL+F to enable/disable advanced filtering. [Default is Disabled]
+	S to enable/disable shapes. [Default is Disabled]
+	Z to enable/disable the querying of everything, includes systemNodes (filters, etc...). [Default is Disabled]
+ 	M to enable/disable the Capital letters mode (to ignore upper and lower cases). [Default is Disabled]
+ 	F2 to enable/disable the keyTracking, which allows to find items that has their first letter matching with the one hit on the keyboard. [Default is Disabled]
+	Space key while focusing the results list widget to deselect all (also works with double click if it is on an item).
+	Shift modifier while focusing the results list widget to select from a point to an other.
+	CTRL+A while focusing the results list widget to select all objects listed in it.
+	
+	U to enable/disable UI update according to what is selected on the scene. [Default is Enabled excepted with a huge list]
+	CTRL+U to enable/disable updating for updating even in huge selection mode (might slow down Maya, default is Disabled, and when disabled, the window only updates when getting focus). [Default is Disabled]
+
+	NOTE: Holding ALT while using keyTracking mode will add the new object to current selection.
+	In keyTracking mode: Up Arrow and Down Arrow
+
+
+

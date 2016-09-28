@@ -1,0 +1,56 @@
+
+Creator: Vipe    www.thy-vipe.deviantart.com
+###############################################
+
+LANGUAGE: English, CODE LANGUAGE: Python, LIBRARIES USED: pymel, PySide, Windows's ctypes, OpenMaya, mel
+########################################################################################################
+
+This script is for Maya 2014 and newer (it uses PySide, which may not be included in Maya 2013)
+For WINDOWS users. 
+
+
+1) Install the script in C:\C:\Users\%YOU%\Documents\maya\scripts
+2) Execute the command below via the script editor/the command line set to Python, 
+   or via a a new shelf button** (see bottom):
+
+from searchByName import sbnSys
+reload(sbnSys)
+sbn = sbnSys.sbnWidget()
+sbn.show()
+
+########################################################################################
+TIP: After having sbn opened, hit F1 while focusing sbn's window to see all the hotkeys.
+     Typing "@all" in one of the Research term will make the script list any item that matches the filters.
+     Excluding stuff while using @all still works.In that case it'll list everything excepted the objects containing the excluded terms.
+
+You can hit:
+
+	CTRL+F to enable/disable advanced filtering. [Default is Disabled]
+	S to enable/disable shapes. [Default is Disabled]
+	Z to enable/disable the querying of everything, includes systemNodes (filters, etc...). [Default is Disabled]
+ 	M to enable/disable the Capital letters mode (to ignore upper and lower cases). [Default is Disabled]
+ 	F2 to enable/disable the keyTracking, which allows to find items that has their first letter matching with the one hit on the keyboard. [Default is Disabled]
+	Space key while focusing the results list widget to deselect all (also works with double click if it is on an item).
+	Shift modifier while focusing the results list widget to select from a point to an other.
+	CTRL+A while focusing the results list widget to select all objects listed in it.
+	
+	U to enable/disable UI update according to what is selected on the scene. [Default is Enabled excepted with a huge list]
+	CTRL+U to enable/disable updating for updating even in huge selection mode (might slow down Maya, default is Disabled, and when disabled, the window only updates when getting focus). [Default is Disabled]
+
+	NOTE: Holding ALT while using keyTracking mode (F2) will add the new object to current selection.
+	In keyTracking mode: Up Arrow and Down Arrow + letters
+
+
+###################################################################################################
+**To create a new shelf button, copy paste this as MEL code in the command line: shelfEditorDialog;
+
+Choose the shelf you prefer, or create a new one (by clicking the little white paper with some kind
+of "star" just under "Shelves").
+
+Create a new shelf content, again by clicking the little white paper with some kind of "star" just under
+"Shelf Contents", name it the way you want and add the tooltip and icon you want. You can also use
+the icon given with the script if you wish to.
+ 
+Select your new shelf content, and then go to the "Command" tab (in the upper part of the Shelf Editor's window), 
+choose the language Python and paste the command given above this tip (from searchByName [...])
+
