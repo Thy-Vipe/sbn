@@ -3,6 +3,7 @@ import sbnSys
 def open():
 	global SBN_UI
 	reload(sbnSys)
+	try:
 		SBN_UI.close()
 	except:
 		pass
